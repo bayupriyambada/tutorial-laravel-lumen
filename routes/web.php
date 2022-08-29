@@ -21,3 +21,15 @@ $router->get('/todos', 'TodosController@index');
 $router->post('/todos', 'TodosController@store');
 $router->put('/todos/{id}', 'TodosController@update');
 $router->delete('/todos/{id}', 'TodosController@destroy');
+
+// students
+$router->get('/students', 'StudentsController@index');
+$router->post('/students', 'StudentsController@store');
+$router->put('/students/{id}', 'StudentsController@update');
+$router->delete('/students/{id}', 'StudentsController@destroy');
+
+// class
+$router->get('/classes', 'ClassController@index');
+$router->post('/classes', 'ClassController@store');
+$router->put('/classes/{id}', 'ClassController@update');
+$router->delete('/classes/{id}', 'ClassController@destroy');
