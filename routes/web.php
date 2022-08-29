@@ -16,3 +16,8 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/todos', 'TodosController@index');
+$router->post('/todos', 'TodosController@store');
+$router->put('/todos/{id}', 'TodosController@update');
+$router->delete('/todos/{id}', 'TodosController@destroy');
